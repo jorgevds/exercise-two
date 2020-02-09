@@ -5,8 +5,8 @@
   color: aliceblue;
   position: absolute;
   text-align: left;
-  padding: 10% 40% 0% 25%;
-  margin-left: -80px;
+  padding: 10% 60% 0% 25%;
+  margin-left: -160px;
   text-shadow: black;
 }
 
@@ -28,7 +28,7 @@
   /* background-color: grey;
   mix-blend-mode: overlay; */
   z-index: 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
@@ -169,4 +169,69 @@ hr {
   background-color: inherit;
   font-family: inherit;
   font-size: inherit;
+}
+
+/* Add padding to containers */
+form .container {
+  display: inline-block;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  left: 750px;
+  margin: 0 auto;
+  z-index: 1;  
+  padding: 35px 25px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Full-width input fields */
+form input {
+  z-index: 1;
+  width: 95%;
+  margin: 10px 0px;
+  padding: 10px;
+  display: block;
+  border-style: solid;
+  border-width: 0.01px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+input:focus {
+  background-color: white;
+  outline: none;
+  /* padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px; */
+  border: solid lightskyblue inherit;
+  border-radius: inherit;
+  box-shadow: 0 0 5px rgb(81, 203, 238, 1);
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 16px;
+  margin: 8px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 95%;
+}
+
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+form p {
+  font-size: 12px;
+  margin-top: 0px;
+  display: inline-block
 }
